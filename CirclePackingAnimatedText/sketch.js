@@ -5,10 +5,11 @@
 
 var circles;
 var spots;
-var img;
+var img, cute;
 
 function preload() {
     img = loadImage("assets/1000.png");
+    cute = loadImage('assets/1000.png');
 }
 
 function setup() {
@@ -80,7 +81,7 @@ function draw() {
             }
         }
 
-        circle.show();
+        circle.show2(cute);
         circle.grow();
     }
 }
